@@ -1,9 +1,13 @@
+use std::io;
+
 fn main() {
-    for number in (1..4).rev() {
-        //(1..4) is called 'Range" and is provided by the standard library
-        //range generates all numbers in the sequence from one number and ending before another number
-        // .rev() reverses the range, counting from 3->2->1
-        println!("{number}");
-    }
-    println!("LIFTOFF!!!");
+    println!("Enter a temperature in F to convert to C");
+
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).expect("failed to read line");
+
+    let input = input.trim().parse::<f32>().unwrap();
+    let converted_input: f32 = (input - 32.0) * 5.0/9.0;
+    println!("{input} degrees fahrenheit is {converted_input} in degrees celsius");
+    
 }
