@@ -1,13 +1,13 @@
 fn main() {
-    let num = 7;
-    
-    if num < 5 {
-        print!("condition is true!");
-    } else {
-        print!("condition is false!");
-    }
+    let number = 6;
 
-    if num != 0 {
-        print!("the number is something other than zero");
+    if number % 4 == 0 {
+        println!("number is divisible by 4");
+    } else if number % 3 == 0 {
+        print!("number is divisible by 3");
+    } else if number % 2 == 0 {
+        print!("number is divisible by 2");
+    } else {
+        print!("number is not divisible by 4, 3 or 2");
     }
 }
