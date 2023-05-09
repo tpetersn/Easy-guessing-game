@@ -6,4 +6,8 @@ fn main() {
     } else {
         print!("condition is false!");
     }
+
+    if num != 0 {
+        print!("the number is something other than zero");
+    }
 }
