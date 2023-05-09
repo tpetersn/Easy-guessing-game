@@ -1,8 +1,9 @@
 fn main() {
-    let x = plus_one(5);
-    print!("the value of x is; {x}");
-}
-
-fn plus_one(x: i32) -> i32 {
-    x + 1
+    let num = 3;
+    
+    if num < 5 {
+        print!("condition is true!");
+    } else {
+        print!("condition is false!");
+    }
 }
